@@ -9,6 +9,7 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
+    border: 2px solid green;
 }
 
 header * {
@@ -17,11 +18,21 @@ header * {
 
 header li {
     margin: 20px;
+    margin-left: 120px;
+    font-size: 19px;
 }
 
 header li a {
     text-decoration: none;
     color: green;
+}
+
+header li a:hover {
+    color: rgb(246, 246, 176);
+}
+
+header li a:active {
+    color: rgb(176, 246, 203);
 }
 
 .logo-link {
@@ -35,10 +46,52 @@ header li a {
 
 
 .logo-link:hover {
-    color: yellow;
+    color: rgb(246, 246, 176);
 }
 
 body {
     margin-top: 80px;
+}
 
+.hero-image {
+    border: 2px solid green;
+    text-align: center;
+    background-color: pink;
+}
+
+.featured-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 50;
+    color: green;
+    background-color: pink;
+    border: 2px solid green;
+}
+
+.featured-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid green;
+    background-color: pink;
+    text-align: center;
+}
+
+.featured-btn {
+    border: 2px solid green;
+    background-color: pink;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 50;
+    color: green;
+    margin: 20px;
+    height: 60px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.featured-btn:hover {
+    background-color: lightcoral;
+    cursor: pointer;
+    border-radius: 20px;
 }
