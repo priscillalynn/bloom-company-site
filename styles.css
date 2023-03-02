@@ -25,14 +25,26 @@ header li {
 header li a {
     text-decoration: none;
     color: green;
+    border-radius: 20px;
 }
 
 header li a:hover {
-    color: rgb(246, 246, 176);
+    color: green;
+    border: 2px solid green;
+    background-color: lightcoral;
+    transition: background-color 80ms ease-out;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 header li a:active {
     color: rgb(176, 246, 203);
+    border: 2px solid green;
+    background-color: lightcoral;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 .logo-link {
@@ -46,7 +58,7 @@ header li a:active {
 
 
 .logo-link:hover {
-    color: rgb(246, 246, 176);
+    color: lightcoral;
 }
 
 body {
@@ -59,13 +71,12 @@ body {
     background-color: pink;
 }
 
-.featured-title {
+.featured-title, .services-title, .about-title, .contact-title {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     font-weight: 50;
     color: green;
-    background-color: pink;
-    border: 2px solid green;
+    text-align: center;
 }
 
 .featured-container {
@@ -94,4 +105,24 @@ body {
     background-color: lightcoral;
     cursor: pointer;
     border-radius: 20px;
+}
+
+figcaption a {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 19px;
+    font-weight: 50;
+    color: rgb(92, 164, 92);
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.figcaption:hover {
+    color: black;
+}
+
+.top1:hover, .top2:hover, .top3:hover {
+    opacity: 0.8;
+    transition: opacity 100ms ease-out;
 }
