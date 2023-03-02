@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
 
+* {
+background-color: rgb(254, 226, 231);
+}
+
 header {
     background-color: pink;
     position: fixed;
@@ -14,6 +18,8 @@ header {
 
 header * {
     display: inline;
+    background-color: pink;
+
 }
 
 header li {
@@ -54,8 +60,8 @@ header li a:active {
     font-size: 60px;
     font-weight: 50;
     margin-left: 40px;
+    background-color: pink;
 }
-
 
 .logo-link:hover {
     color: lightcoral;
@@ -127,9 +133,45 @@ figcaption a {
     transition: opacity 100ms ease-out;
 }
 
+.about-container {
+    border: 2px solid green;
+    background-color: rgb(254, 226, 231);
+    text-align: center;
+    color: gray;
+    font-weight: 20px;
+    font-size: 18px;
+    margin: 50px;
+}
 
+.about-image {
+  border-radius: 10px;
+}
 
+.about-btn {
+    border: 2px solid green;
+    background-color: pink;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 50;
+    color: green;
+    margin: 20px;
+    height: 60px;
+    justify-self: center;
+    border-radius: 10px;
+}
 
+.about-btn:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+  border-radius: 20px;
+
+}
+
+.contact {
+  background-color: rgb(254, 226, 231);
+  border: 2px solid green;
+  margin: 50px;
+}
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #aca49c;
@@ -154,7 +196,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     font-size: 0.875em;
   }
   
-  input:focus::placeholder, textarea::focus:placeholder {
+  input:focus::placeholder, textarea:focus::placeholder {
     color: #bbb5af;
   }
   
@@ -188,16 +230,16 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
   
   input:hover::placeholder, textarea:hover::placeholder {
-    color: #e2dedb;
+    color: #ffffff;
     font-size: 0.875em;
   }
   
   input:hover:focus::placeholder, textarea:hover:focus::placeholder {
-    color: #cbc6c1;
+    color: #ffffff;
   }
   
   input:hover::placeholder, textarea:hover::placeholder {
-    color: #e2dedb;
+    color: #ffffff;
     font-size: 0.875em;
   }
   
@@ -232,8 +274,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
   
   input:hover {
-    background: #b3aca7;
-    color: #e2dedb;
+    background: pink;
+    color: #2e2926;
   }
   
   textarea {
@@ -259,8 +301,8 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
   
   textarea:hover {
-    background: #b3aca7;
-    color: #e2dedb;
+    background: pink;
+    color: #2e2b29;
   }
   
   #submit {
@@ -281,5 +323,15 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   }
   
   #submit:hover {
-    color: #e2dedb;
+    color: #ffffff;
+  }
+
+  .social-link {
+    padding: 10px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
   }
