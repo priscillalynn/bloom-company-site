@@ -71,10 +71,38 @@ body {
     margin-top: 80px;
 }
 
-.hero-image {
-    border: 2px solid green;
+.hero {
     text-align: center;
+    flex-direction: column;
+    padding: 200px 200px;
+}
+
+.hero-title {
+  color: rgb(97, 82, 82);
+  font-size: 60px;
+  font-style: italic;
+}
+
+.hero-subtitle {
+  color: rgb(97, 82, 82);
+  font-size: 30px;
+}
+
+.hero-btn {
+  border: 2px solid green;
     background-color: pink;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: green;
+    padding: 20px 30px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.hero-btn:hover {
+  background-color: lightcoral;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 .featured-title, .services-title, .about-title, .contact-title {
@@ -90,8 +118,10 @@ body {
     flex-direction: row;
     justify-content: center;
     border: 2px solid green;
-    background-color: pink;
+    background-color: rgb(254, 226, 231);
     text-align: center;
+    margin: 50px;
+    align-items: flex-end;
 }
 
 .featured-btn {
@@ -102,7 +132,6 @@ body {
     font-weight: 50;
     color: green;
     margin: 20px;
-    height: 60px;
     justify-self: center;
     border-radius: 10px;
 }
@@ -137,7 +166,7 @@ figcaption a {
     border: 2px solid green;
     background-color: rgb(254, 226, 231);
     text-align: center;
-    color: gray;
+    color: rgb(85, 82, 82);
     font-weight: 20px;
     font-size: 18px;
     margin: 50px;
@@ -328,10 +357,27 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
   .social-link {
     padding: 10px;
+    opacity: 0.8;
   }
 
   footer {
     text-align: center;
     padding: 50px;
     margin-top: 50px;
+  }
+
+
+  /* Media Queries */
+
+  @media screen and (max-width: 420px) {
+    .header * {
+      display: none;
+    }
+
+    .about-container {
+      margin: 50px 0px;
+    }
+    .about-btn {
+      margin: 20px 0px;
+    }
   }
