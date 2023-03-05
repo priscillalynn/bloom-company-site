@@ -132,6 +132,7 @@ body {
     text-align: center;
     padding: 50px;
     align-items: flex-end;
+    flex-flow: row wrap;
 }
 
 .featured-btn {
