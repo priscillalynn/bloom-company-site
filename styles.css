@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap');
 
 * {
-background-color: rgb(254, 226, 231);
+background-color: white;
+margin: 0;
 }
 
 header {
-    background-color: pink;
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -13,12 +14,11 @@ header {
     height: 80px;
     display: flex;
     align-items: center;
-    border: 2px solid green;
 }
 
 header * {
     display: inline;
-    background-color: pink;
+    background-color: white;
 
 }
 
@@ -30,41 +30,36 @@ header li {
 
 header li a {
     text-decoration: none;
-    color: green;
+    color: rgb(89, 139, 89);
     border-radius: 20px;
 }
 
 header li a:hover {
-    color: green;
-    border: 2px solid green;
-    background-color: lightcoral;
-    transition: background-color 80ms ease-out;
     cursor: pointer;
-    border-radius: 20px;
-    padding: 5px;
+    opacity: 0.8;
 }
 
 header li a:active {
-    color: rgb(176, 246, 203);
-    border: 2px solid green;
-    background-color: lightcoral;
+    color: rgb(196, 142, 151);
     cursor: pointer;
-    border-radius: 20px;
-    padding: 5px;
 }
 
 .logo-link {
     text-decoration: none;
-    color: green;
+    color: rgb(89, 139, 89);
     font-family: 'Playfair Display', serif;
     font-size: 60px;
     font-weight: 50;
     margin-left: 40px;
-    background-color: pink;
 }
 
 .logo-link:hover {
-    color: lightcoral;
+    opacity: 0.8;
+}
+
+.logo-link:active {
+  color: rgb(196, 142, 151);
+  cursor: pointer;
 }
 
 body {
@@ -74,33 +69,48 @@ body {
 .hero {
     text-align: center;
     flex-direction: column;
-    padding: 200px 200px;
+    padding: 140px 140px;
+    background-image: url('assets/images/8c3a7736bb36c0b153df1d36d9add79b.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero-title {
-  color: rgb(97, 82, 82);
+  color: rgb(89, 139, 89);
   font-size: 60px;
   font-style: italic;
+  background-color: transparent;
 }
 
 .hero-subtitle {
-  color: rgb(97, 82, 82);
+  color: rgb(89, 139, 89);
   font-size: 30px;
+  background-color: transparent;
 }
 
 .hero-btn {
-  border: 2px solid green;
-    background-color: pink;
+    border: 2px solid rgb(89, 139, 89);
+    background-color: transparent;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
-    color: green;
+    color: rgb(89, 139, 89);
     padding: 20px 30px;
     justify-self: center;
     border-radius: 10px;
+    background-color: pink;
+    margin: 50px;
 }
 
 .hero-btn:hover {
-  background-color: lightcoral;
+  background-color: rgb(250, 169, 169);
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.hero-btn:active {
+  background-color: rgb(250, 169, 169);
+  opacity: 0.8;
   cursor: pointer;
   border-radius: 20px;
 }
@@ -109,37 +119,60 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     font-weight: 50;
-    color: green;
+    color: rgb(89, 139, 89);
     text-align: center;
+    margin: 40px;
 }
 
 .featured-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 2px solid green;
-    background-color: rgb(254, 226, 231);
+    background-color: rgb(243, 205, 212);
     text-align: center;
-    margin: 50px;
+    padding: 50px;
     align-items: flex-end;
 }
 
 .featured-btn {
-    border: 2px solid green;
+    border: 2px solid rgb(89, 139, 89);
     background-color: pink;
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 50;
-    color: green;
-    margin: 20px;
+    color: rgb(89, 139, 89);
     justify-self: center;
     border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .featured-btn:hover {
-    background-color: lightcoral;
+    background-color: rgb(250, 169, 169);
     cursor: pointer;
     border-radius: 20px;
+}
+
+.featured-btn:active {
+  background-color: rgb(250, 169, 169);
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#see-more-btn {
+  background-color: rgb(243, 205, 212);
+  padding-bottom: 20px;
+}
+
+figure {
+  background-color: rgb(243, 205, 212);
+}
+
+figcaption {
+  background-color: rgb(243, 205, 212);
 }
 
 figcaption a {
@@ -150,30 +183,44 @@ figcaption a {
     color: rgb(92, 164, 92);
     text-align: center;
     text-decoration: none;
+    background-color: rgb(243, 205, 212);
 }
 
 
-.figcaption:hover {
+.figcaption a:hover {
     color: black;
 }
 
-.top1:hover, .top2:hover, .top3:hover {
-    opacity: 0.8;
-    transition: opacity 100ms ease-out;
+.bouquet1, .bouquet2, .bouquet3 {
+  margin: 20px; 
+  background-color: rgb(243, 205, 212);
 }
 
 .about-container {
-    border: 2px solid green;
-    background-color: rgb(254, 226, 231);
-    text-align: center;
-    color: rgb(85, 82, 82);
-    font-weight: 20px;
-    font-size: 18px;
-    margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(243, 205, 212);
+  text-align: center;
+  padding: 50px;
 }
 
-.about-image {
-  border-radius: 10px;
+#para1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 50;
+  color: rgb(89, 139, 89);
+  text-align: center;
+  margin: 20px;
+}
+
+#para2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 50;
+  color: rgb(89, 139, 89);
+  text-align: center;
+  margin: 20px;
 }
 
 .about-btn {
@@ -197,9 +244,8 @@ figcaption a {
 }
 
 .contact {
-  background-color: rgb(254, 226, 231);
-  border: 2px solid green;
-  margin: 50px;
+  background-color: rgb(243, 205, 212);
+  padding: 20px;
 }
 
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
@@ -279,7 +325,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   #form {
     position: relative;
     width: 500px;
-    margin: 50px auto 100px auto;
+    margin: 50px auto 50px auto;
   }
   
   input {
@@ -357,7 +403,7 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
   .social-link {
     padding: 10px;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 
   footer {
@@ -369,9 +415,18 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
 
   /* Media Queries */
 
-  @media screen and (max-width: 420px) {
-    .header * {
+  @media only screen and (max-width: 900px) {
+    .logo-link {
+      display: block;
+      margin: 10 auto;
+    }
+
+    .nav {
       display: none;
+    }
+
+    .hero-title, .hero-subtitle {
+      font-size: 20px;
     }
 
     .about-container {
