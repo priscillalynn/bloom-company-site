@@ -200,48 +200,72 @@ figcaption a {
 .about-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   background-color: rgb(243, 205, 212);
   text-align: center;
   padding: 50px;
 }
 
-#para1 {
+.about-text {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 50;
   color: rgb(89, 139, 89);
-  text-align: center;
-  margin: 20px;
+  padding: 40px 40px;
+  border-radius: 40px;
+  background-color: rgb(243, 205, 212);
 }
 
-#para2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 50;
+.creator-1-image, .creator-2-image {
+  background-color: rgb(243, 205, 212);
+  margin: 40px;
+}
+
+.creator-name {
+  color: lightcoral;
+  font-size: 30px;
+}
+
+.creator-title {
   color: rgb(89, 139, 89);
-  text-align: center;
-  margin: 20px;
+  font-size: 17px;
+  font-style: italic;
 }
 
 .about-btn {
-    border: 2px solid green;
-    background-color: pink;
+    border: 2px solid rgb(89, 139, 89);
+    background-color: rgb(250, 169, 169);
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 50;
-    color: green;
+    color: rgb(89, 139, 89);
     margin: 20px;
     height: 60px;
+    border-radius: 10px;
     justify-self: center;
     border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .about-btn:hover {
-  background-color: lightcoral;
+  background-color: rgb(250, 169, 169);
   cursor: pointer;
   border-radius: 20px;
+}
 
+.about-btn:active {
+  background-color: rgb(250, 169, 169);
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#learn-more-btn {
+  background-color: rgb(243, 205, 212);
+  padding-bottom: 20px;
 }
 
 .contact {
@@ -402,6 +426,13 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     color: #ffffff;
   }
 
+  #phone {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(89, 139, 89);
+  }
+
   .social-link {
     padding: 10px;
     opacity: 0.7;
@@ -411,6 +442,13 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
     text-align: center;
     padding: 50px;
     margin-top: 50px;
+  }
+
+  #footer-bottom {
+    margin: 30px;
+    color: rgb(89, 139, 89);
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
   }
 
 
